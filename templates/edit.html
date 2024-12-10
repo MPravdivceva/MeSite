@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Entry</title>
+</head>
+<body>
+    <h1>Edit Entry</h1>
+    <form method="POST">
+        <label for="title">Entry Title:</label>
+        <input type="text" id="title" name="title" value="{{ entry.title }}" required><br>
+        <label for="content">Content:</label><br>
+        <textarea id="content" name="content" required>{{ entry.content }}</textarea><br>
+        <button type="submit">Save Changes</button>
+    </form>
+    <a href="/diary">Back to Diary</a>
+</body>
+</html>

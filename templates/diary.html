@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diary</title>
+</head>
+<body>
+    <h1>Project Diary</h1>
+    <h2>Diary Entries</h2>
+    <ul>
+        {% for entry in entries %}
+            <li>
+                <h3>{{ entry.title }}</h3>
+                <p>{{ entry.content }}</p>
+                <p><small>Added on: {{ entry.date }}</small></p>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
+
+
